@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import MovieList from './components/MovieList';
 import MovieFilter from './components/MovieFilter';
 import Loader from './components/Loader';
 import { fetchMovies } from './services/tmdb';
 
-const App: React.FC = () => {
+const App = () => {
   const [movies, setMovies] = useState<any[]>([]);
   const [filter, setFilter] = useState('popular');
   const [loading, setLoading] = useState(true);
