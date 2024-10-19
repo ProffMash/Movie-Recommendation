@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '615ebd7218a27e6334701b697ebf376e';
+const API_KEY = import.meta.env.VITE_API_KEY;
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
